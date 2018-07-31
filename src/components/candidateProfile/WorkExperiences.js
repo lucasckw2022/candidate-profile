@@ -12,8 +12,8 @@ export const WorkExperiences = ({experiences}) => (
                 let fromDate = moment(item.fromDate).format('MMM-YYYY'),
                     toDate = item.toDate ? moment(item.toDate).format('MMM-YYYY') : 'Current',
                     toDateValue = moment(item.toDate ? item.toDate : new Date()),
-                    diffYear = toDateValue.diff(item.fromDate, 'y'),
-                    diffMonths = moment(item.fromDate).add(toDateValue.diff(item.fromDate, 'M'), 'M').month(),
+                    diffYear = Math.floor(toDateValue.diff(item.fromDate, 'M') / 12),
+                    diffMonths = Math.floor(toDateValue.diff(item.fromDate, 'M') % 12),
                     diff = `${diffYear} ${diffYear > 1 ? 'yrs' : 'yr' } ${diffMonths} ${diffMonths > 1 ? 'mos' : 'mo'}`
                 return (<li key={`experience-${id}`}>
                     <p className="list-title">{item.position}</p>
