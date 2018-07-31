@@ -1,0 +1,42 @@
+$icon-list: (
+    education: '../images/icon_education.svg',
+    email: '../images/icon_email.svg',
+    location: '../images/icon_location.svg',
+    phone: '../images/icon_phone.svg',
+    bullet: '../images/icon_bullet.svg'
+);
+
+@mixin icon-image($name) {
+    background-image: url(map-get($icon-list, $name));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-right: 30px;
+    vertical-align: middle;
+}
+
+.icon-education:before {
+    @include icon-image(education);
+}
+
+.icon-location:before {
+    @include icon-image(location);
+}
+
+.icon-phone:before {
+    @include icon-image(phone);
+}
+
+.icon-email:before {
+    @include icon-image(email);
+}

@@ -1,0 +1,80 @@
+.candidate-profiles {
+    text-align: center;
+    .indicator {
+        font-size: $font-size-semi-large;
+    }
+    .candidate-switch {
+        content: '';
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: $red;
+        border-radius: 50%;
+        &.prev {
+            background-image: url('../images/icon_arrow_left.svg');
+            left: 5vw;
+        }
+        &.next {
+            background-image: url('../images/icon_arrow_right.svg');
+            right: 4vw;
+        }
+        @media screen and (max-width: 960px){
+            position: relative;
+            top: auto;
+            transform: none;
+            width: 40px;
+            height: 40px;
+            &.next, &.prev {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
+    .candidate {
+        text-align: left;
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.50);
+        margin-bottom: 20px;
+        border-radius: 8px;
+        .section {
+            margin-bottom: 40px;
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+        .introduction {
+            text-align: center;
+            .profile-icon {
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                margin: 20px 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .personal-details {
+            .details {
+                &:last-child {
+                    margin-bottom: -20px;
+                }
+                .detail-info {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .work-experience {
+            .remarks {
+                color: $grey;
+                font-size: $font-small;
+            }
+        }
+    }
+}

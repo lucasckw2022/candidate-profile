@@ -1,0 +1,14 @@
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+    &.button-default {
+        color: $light-blue;
+        background-color: $white;
+        border-color: $light-blue;
+        &:hover {
+            color: $white;
+            background-color: $light-blue;
+        }
+    }
+}

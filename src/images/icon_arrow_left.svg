@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_arrow_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.7245,0.4955 L-0.0005,16.4288333 L15.7228333,32.3805 C16.3695,33.0338333 17.4261667,33.0421667 18.0811667,32.3971667 C18.7361667,31.7505 18.7445,30.6955 18.0978333,30.0405 L6.3345,18.1038333 L34.0545,18.1038333 C34.9761667,18.1038333 35.7211667,17.3588333 35.7211667,16.4371667 C35.7211667,15.5171667 34.9761667,14.7705 34.0545,14.7705 L6.31783333,14.7705 L18.0978333,2.83716667 C18.7428333,2.18383333 18.7378333,1.12716667 18.0811667,0.4805 C17.4261667,-0.1645 16.3711667,-0.1595 15.7245,0.4955" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-87.000000, -645.000000)">
+        <g id="left-btn" transform="translate(72.000000, 630.000000)">
+            <g id="icon/arrow/left" transform="translate(15.000000, 15.000000)">
+                <g id="Group" transform="translate(6.666667, 8.333333)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                    <g id="Mixin/Fill/White" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(-6.666667, -8.333333)" id="bg">
+                            <rect x="0" y="0" width="50" height="50"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
