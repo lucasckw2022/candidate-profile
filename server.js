@@ -3,6 +3,6 @@ const path = require("path");
 const app = express();
 
 app.use(express.static(__dirname + '/dist'))
-.get('/', (req, res) => res.sendFile(path.join('/dist/index.html')))
+.get('/', (req, res) => res.sendFile('index'))
 
 app.listen(process.env.PORT || 8080);
