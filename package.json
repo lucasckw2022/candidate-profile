@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "node server.js",
+    "postinstall": "npm run build",
     "dev-start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "test": "react-scripts test --env=jsdom",
