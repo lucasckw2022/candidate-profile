@@ -17,9 +17,9 @@ export const Candidate = ({candidate}) => (
             { candidate.workExperiences && candidate.workExperiences.length > 1 && <WorkExperiences experiences={candidate.workExperiences}/>}
             { candidate.skills && candidate.skills.length > 1 && <Skills skills={candidate.skills} /> }
             { candidate.languages && candidate.languages.length > 1 && <Languages languages={candidate.languages} /> }
-            {/* <div className="image-container">
+            <div className="image-container">
                 <img className="brand-logo" src={logo} />
-            </div> */}
+            </div>
         </Panel.Body>
     </Panel>
 );
