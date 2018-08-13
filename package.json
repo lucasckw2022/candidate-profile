@@ -12,7 +12,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "npm run build && node server.js",
+    "start": "node server.js",
+    "postinstall": "npm run build",
     "dev-start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "test": "react-scripts test --env=jsdom",
