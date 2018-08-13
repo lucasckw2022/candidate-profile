@@ -19,7 +19,7 @@ export const WorkExperiences = ({experiences}) => (
                     <p className="list-title">{item.position}</p>
                     <p>{item.place}</p>
                     <p>{`${fromDate} - ${toDate} (${diff})`}</p>
-                    {item.description && <p className="remarks">{item.description}</p>}
+                    {item.description && <p className="remarks">{item.description.split('\n').map((item, id)=> <p>{item}</p>)}</p>}
                 </li>)
             })
         }
