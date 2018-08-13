@@ -3,7 +3,9 @@
 npm install
 ```
 
-2. run node server
+2. run node dev server (webpack)
 ```
-npm start
+npm run dev-start
 ```
+
+*** express server is for heroku deployment
