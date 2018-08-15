@@ -8,4 +8,5 @@ npm install
 npm run dev-start
 ```
 
-*** express server is for heroku deployment
+*** express server is for the application to run heroku server
+https://lucas-candidate-profile-react.herokuapp.com/
